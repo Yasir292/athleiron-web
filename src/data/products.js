@@ -1,0 +1,80 @@
+export const products = [
+  {
+    id: 1,
+    name: "IronTrack Tracksuit",
+    tagline: "Warm-up essential. Weather-ready comfort.",
+    price: 74,
+    category: "Tracksuits",
+    colors: ["Black", "Charcoal", "Navy"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&auto=format&fit=crop&q=80",
+    description: "The IronTrack Tracksuit is built for movement. Polyester-elastane blend with zip pockets, ribbed cuffs, and a tapered fit that works from warm-ups to rest days.",
+    features: ["Moisture-wicking fabric", "Secure zip pockets", "Tapered athletic fit", "Reinforced stitching"],
+    badge: "Best Seller"
+  },
+  {
+    id: 2,
+    name: "Forge Training Tee",
+    tagline: "Lightweight. Breathable. Unstoppable.",
+    price: 32,
+    category: "Tops",
+    colors: ["White", "Black", "Heather Grey", "Flame Orange"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    image: "https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=800&auto=format&fit=crop&q=80",
+    description: "A performance training tee with anti-odor treatment and four-way stretch. Designed to keep you cool through high-intensity sessions.",
+    features: ["Anti-odor finish", "Four-way stretch", "Flatlock seams", "Quick-dry"],
+    badge: null
+  },
+  {
+    id: 3,
+    name: "Volt Performance Leggings",
+    tagline: "Compression that keeps up.",
+    price: 58,
+    category: "Bottoms",
+    colors: ["Black", "Olive", "Navy"],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    image: "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=800&auto=format&fit=crop&q=80",
+    description: "High-waist compression leggings with a sculpting fit and squat-proof fabric. Side pockets for your phone and essentials.",
+    features: ["Squat-proof fabric", "High-rise waistband", "Phone pockets", "Compression support"],
+    badge: "New"
+  },
+  {
+    id: 4,
+    name: "Summit Hoodie",
+    tagline: "Layer up. Lock in.",
+    price: 68,
+    category: "Tops",
+    colors: ["Black", "Charcoal", "Stone"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    image: "https://images.unsplash.com/photo-1556906781-9a412961c28c?w=800&auto=format&fit=crop&q=80",
+    description: "A heavyweight cotton-fleece hoodie with a relaxed athletic cut. Perfect for training layers or off-duty streetwear.",
+    features: ["Heavyweight fleece", "Kangaroo pocket", "Ribbed hem and cuffs", "Relaxed fit"],
+    badge: null
+  },
+  {
+    id: 5,
+    name: "Core Shorts",
+    tagline: "Train hard. Stay cool.",
+    price: 36,
+    category: "Bottoms",
+    colors: ["Black", "Navy", "Flame Orange"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    image: "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=800&auto=format&fit=crop&q=80",
+    description: "Versatile training shorts with a built-in liner, zip pocket, and breathable panels. Made for the gym, track, or box.",
+    features: ["Built-in liner", "Zip pocket", "Breathable side panels", "Elastic waistband"],
+    badge: null
+  },
+  {
+    id: 6,
+    name: "Endurance Jacket",
+    tagline: "Defy the weather.",
+    price: 89,
+    category: "Outerwear",
+    colors: ["Black", "Charcoal"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    image: "https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=800&auto=format&fit=crop&q=80",
+    description: "A water-resistant running jacket with reflective details, underarm vents, and a packable hood. Built for early mornings and late nights.",
+    features: ["Water-resistant shell", "Reflective details", "Packable hood", "Underarm vents"],
+    badge: "Premium"
+  }
+];
