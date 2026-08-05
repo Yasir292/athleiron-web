@@ -1,4 +1,5 @@
 import { X, Plus, Minus, ShoppingBag, Trash2 } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import { Button } from "./Button";
 
@@ -97,7 +98,9 @@ export function CartDrawer() {
               <span>Subtotal</span>
               <span>£{subtotal}</span>
             </div>
-            <Button className="w-full">Checkout — £{subtotal}</Button>
+            <Link to="/checkout" onClick={() => setIsOpen(false)} className="block">
+              <Button className="w-full">Checkout — £{subtotal}</Button>
+            </Link>
             <button
               onClick={clearCart}
               className="mt-2 w-full text-center text-xs text-iron-500 hover:text-white"
@@ -105,7 +108,7 @@ export function CartDrawer() {
               Clear cart
             </button>
             <p className="mt-3 text-center text-xs text-iron-500">
-              Checkout integration ready for Stripe. Add your payment links to activate live orders.
+              Secure checkout. You'll receive a Stripe payment link by email.
             </p>
           </div>
         )}
