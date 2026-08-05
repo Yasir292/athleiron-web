@@ -2,9 +2,11 @@
 
 A premium UK sportswear brand website built with React, Vite, and Tailwind CSS.
 
-## Live Preview
+## Live Site
 
-The site is currently running locally at `http://localhost:4173/`.
+**Production URL:** https://athleiron-web.vercel.app
+
+Local preview: `http://localhost:4173/`
 
 ## Tech Stack
 
@@ -23,7 +25,8 @@ athleiron-web/
 │   ├── components/      # Reusable UI components
 │   ├── context/         # Cart context
 │   ├── data/            # Product data
-│   ├── pages/           # Route pages (Home, Shop, Product, About, Contact)
+│   ├── pages/           # Route pages (Home, Shop, Product, About, Contact, Checkout)
+│   ├── config/          # Stripe payment links config
 │   ├── App.jsx          # Router layout
 │   └── main.jsx         # Entry point
 ├── dist/                # Production build
@@ -61,11 +64,22 @@ Upload the contents of the `dist/` folder to any static host. Ensure all routes 
 
 ## Enabling Real Payments
 
-The cart currently simulates checkout. To accept real payments:
+The checkout flow currently collects customer and order details, then shows an "order received" confirmation. To accept real payments:
 
+### Option A: Stripe Payment Links (simplest, no backend)
 1. Create a Stripe account at [stripe.com](https://stripe.com).
-2. Create Stripe Payment Links for each product.
-3. Update the cart checkout button in `src/components/CartDrawer.jsx` to redirect to a Stripe Payment Link or Checkout Session.
+2. Create a Stripe Payment Link for each product in your Stripe Dashboard.
+3. Paste each link into `src/config/stripe.js`.
+4. Set `enabled: true` in `src/config/stripe.js`.
+5. Add "Buy Now" buttons that redirect to the product's Stripe Payment Link.
+
+### Option B: Stripe Checkout Sessions (full cart checkout)
+1. Set up a small backend (Node.js/Express, Next.js API routes, or serverless function).
+2. Create a Checkout Session from the cart items.
+3. Redirect the customer to Stripe's hosted checkout page.
+
+### Option C: Manual invoice
+The current flow collects the order and shows a confirmation. You can manually email customers a Stripe/PayPal invoice until automated payments are connected.
 
 ## Brand Assets
 
